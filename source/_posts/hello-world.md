@@ -14,7 +14,6 @@ categories: #文章分类 可以省略
 提示信息：
 ``` 
 nginx: [error] open() “/usr/local/nginx/logs/nginx.pid” failed (2: No such file or directory) 
-[root@VM_16_6_centos sbin]# 
 ```
 # 解决方法：
 执行一下命令就可已启动 不再提示 pid 错误

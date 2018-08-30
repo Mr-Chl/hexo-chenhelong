@@ -46,7 +46,7 @@
 <meta property="og:site_name" content="chenhelong blog">
 <meta property="og:description" content="添加防火墙端口先说说 centos7 与 centos6 防火墙区别 centos7 用的是 firewall 操作防火墙命令：  停止firewall 1systemctl stop firewalld.service  启动firewall 1systemctl start firewalld.service  查看默认防火墙状态（不运行显示notrunning，运行显示running） 1f">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-30T03:15:13.199Z">
+<meta property="og:updated_time" content="2018-08-30T06:54:56.605Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux 服务器 centos7 防火墙端口设置">
 <meta name="twitter:description" content="添加防火墙端口先说说 centos7 与 centos6 防火墙区别 centos7 用的是 firewall 操作防火墙命令：  停止firewall 1systemctl stop firewalld.service  启动firewall 1systemctl start firewalld.service  查看默认防火墙状态（不运行显示notrunning，运行显示running） 1f">
@@ -395,12 +395,13 @@
 <li><p>重启一个服务：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart firewalld.service</span><br></pre></td></tr></table></figure>
 </li>
+<li><p>添加一个端口（–permanent永久生效，没有此参数重启后失效）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --zone=public --add-port=80/tcp --permanent</span><br><span class="line">firewall-cmd --zone=public --add-port=443/tcp --permanent</span><br><span class="line">firewall-cmd --zone=public --add-port=22/tcp --permanent</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 </li>
 </ul>
-<pre><code>* 添加一个端口（--permanent永久生效，没有此参数重启后失效）
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --zone=public --add-port=80/tcp --permanent</span><br><span class="line">firewall-cmd --zone=public --add-port=443/tcp --permanent</span><br><span class="line">firewall-cmd --zone=public --add-port=22/tcp --permanent</span><br></pre></td></tr></table></figure>
-</code></pre><h1 id="centos6-用的是-iptable"><a href="#centos6-用的是-iptable" class="headerlink" title="centos6 用的是 iptable"></a>centos6 用的是 iptable</h1><ul>
+<h1 id="centos6-用的是-iptable"><a href="#centos6-用的是-iptable" class="headerlink" title="centos6 用的是 iptable"></a>centos6 用的是 iptable</h1><ul>
 <li><p>操作防火墙命令：</p>
 <ul>
 <li><p>查看防火墙的状态</p>
@@ -521,71 +522,6 @@
 
 
 
-    
-
-    <div class ="post-donate">
-        <div id="donate_board" class="donate_bar center">
-              <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏">赏</a>
-              <span id="donate_txt" class="donate_txt">
-                   
-                        仅仅是一个功能
-                   
-              </span>
-            <br>
-        </div>  
-  
-        <div id="donate_guide" class="donate_bar center hidden">
-            <!--
-            
-                <a href="http://o7keinrz4.bkt.clouddn.com/alipay.jpg" title="支付宝打赏" class="fancybox" rel="article0" 
-                    style="float:left;margin-left:25%;margin-right:10px;">
-                    <img src="http://o7keinrz4.bkt.clouddn.com/alipay.jpg" title="" height="164px" width="164px">
-                </a> 
-              
-
-            
-                <a href="http://o7keinrz4.bkt.clouddn.com/wechat.jpg" title="微信打赏" class="fancybox" rel="article0"
-                    style="margin-right:30%">
-                    <img src="http://o7keinrz4.bkt.clouddn.com/wechat.jpg" title="" height="164px" width="164px">
-                </a>
-            
-            -->
-            <table>
-                <tr>
-                    <td>
-                        
-                            <a href="http://o7keinrz4.bkt.clouddn.com/alipay.jpg" title="支付宝打赏" class="fancybox" rel="article0" 
-                                style="float:left;margin-left:25%;margin-right:10px;">
-                                <img src="http://o7keinrz4.bkt.clouddn.com/alipay.jpg" title="" height="164px" width="164px">
-                            </a> 
-                         
-                    </td>
-                    <td>
-                        
-                            <a href="http://o7keinrz4.bkt.clouddn.com/wechat.jpg" title="微信打赏" class="fancybox" rel="article0"
-                                style="margin-right:30%">
-                                <img src="http://o7keinrz4.bkt.clouddn.com/wechat.jpg" title="" height="164px" width="164px">
-                            </a>
-                        
-                    </td>
-                </tr>
-            </table>
-
-        </div>
-
-        <script type="text/javascript">
-            document.getElementById('btn_donate').onclick = function() {
-                $('#donate_board').addClass('hidden');
-                // $('#donate_guide').removeClass('hidden');
-                $('#donate_guide').show(2000);
-            }
-
-        </script>
-    </div>
-
-    
-
-
       
     </div>
 
@@ -679,19 +615,15 @@
           
             
               <span class="links-of-author-item">
-                <a href="https://github.com/guxiangfly" target="_blank">GitHub</a>
+                <a href="https://github.com/Mr-Chl" target="_blank">GitHub</a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="https://twitter.com/your-user-name" target="_blank">Twitter</a>
+                <a href="https://weibo.com/u/3496200393/home?topnav=1&wvr=6" target="_blank">微博</a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="http://weibo.com/your-user-name" target="_blank">微博</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://www.zhihu.com/people/guxiangfly/activities" target="_blank">知乎</a>
+                <a href="https://www.zhihu.com" target="_blank">知乎</a>
               </span>
             
           

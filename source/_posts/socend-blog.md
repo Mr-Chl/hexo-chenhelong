@@ -32,7 +32,6 @@ categories: #文章分类 可以省略
       ```
       systemctl restart firewalld.service
       ```
-      
       * 添加一个端口（--permanent永久生效，没有此参数重启后失效）
       ```
       firewall-cmd --zone=public --add-port=80/tcp --permanent

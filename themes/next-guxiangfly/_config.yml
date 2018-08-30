@@ -12,10 +12,9 @@ menu:
 
 # Social links
 social:
-  GitHub: https://github.com/guxiangfly
-  Twitter: https://twitter.com/your-user-name
-  微博: http://weibo.com/your-user-name
-  知乎: https://www.zhihu.com/people/guxiangfly/activities
+  GitHub: https://github.com/Mr-Chl
+  微博: https://weibo.com/u/3496200393/home?topnav=1&wvr=6
+  知乎: https://www.zhihu.com
 
 
 # Social Icons
@@ -121,7 +120,7 @@ suprise:
 
 # donate
 donate:
-  enable: true
+  enable: false
   text: 仅仅是一个功能
   wechat: http://o7keinrz4.bkt.clouddn.com/wechat.jpg
   alipay: http://o7keinrz4.bkt.clouddn.com/alipay.jpg
