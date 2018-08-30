@@ -9,7 +9,7 @@
 
     .assist-btn {
         position: fixed;
-        top: 50％;
+        top: 50%;
         left: 10px;
         -moz-border-radius: 50px;
         -webkit-border-radius: 50px;
@@ -17,10 +17,17 @@
         outline: none;
         border: none;
         color: #87daff;
+        z-index:1000;
     }
-
+    #canvas{
+        position:absolute;
+        left:0;
+        top:0;
+        z-index:0;
+    }
 </style>
-
+<canvas width="100%" height="100%" id="canvas"></canvas>
+	 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
 <script type="text/javascript" src="{{ url_for(theme.vendors) }}/jquery/index.js?v=2.1.3"></script>
 <script type="text/javascript">
     // 浮动圆点展开与收缩
@@ -84,7 +91,7 @@
 
     var clickFlog = false;
     var body = {color:  $("body").css('color'), background: $("body").css('background')};
-    var a_tag = {color:  $("#idhyt-surprise-ball #idhyt-surprise-ball-animation .drag").css('color')};
+    var a_tag = {color: '#555' };
     var header = { background: $(".header").css('background')};
     var logo_line_i = {background: $(".logo-line-before i").css('background')};
     function switch_theme() {
@@ -102,14 +109,6 @@
             })
         } else {
             clickFlog = false;
-            body = { 
-                'background':'url(http://img.mp.itc.cn/upload/20170324/663c85eae74f4320a3e382f03af76d52_th.jpg)',
-                'background-position': 'center center',
-                'background-size': 'auto',
-                'background-repeat': 'repeat',
-                'background-attachment': 'fixed',
-                'background-size':'cover',
-            }
             configtheme({
                 body: body,
                 a_tag: a_tag,
@@ -121,25 +120,26 @@
 
     $(function () {
         $("#assist_btn").dblclick(function() {
-            switch_theme();
+            var pattern = Trianglify({
+                width: $('.container').width(),
+                height: $('.container').height(),
+            });
+            pattern.canvas(document.getElementsByTagName('canvas')[0]);
         });
     });
-
     function configtheme(opt) {
-        $("body").css(opt.body);
+        $(".container").css(opt.body);
         $("a:not('.links-of-author-item a, .site-state-item a, .site-state-posts a, .feed-link a, .motion-element a, .post-tags a, .show-commit-cls a, #donate_board a')").css(opt.a_tag);
-        $(".header, .footer").css(header);
+        $(".header, .footer").css(opt.header);
         $(".logo-line-before i, .logo-line-after i").css(opt.logo_line_i);
         $("#idhyt-surprise-ball #idhyt-surprise-ball-animation .drag").css(opt.a_tag);
         $(".post-title-link, .posts-expand .post-meta, .post-comments-count, .disqus-comment-count, .post-category a, .post-nav-next a, .post-nav-item a").css(opt.a_tag);
     }
 </script>
+<script>
 
-<div>
-
-    <button class="assist-btn circle" id="assist_btn" title="双击切换主题">C</button>
-
-</div>
+</script>
+<button class="assist-btn circle" id="assist_btn" title="双击切换主题">C</button>
 
 
 

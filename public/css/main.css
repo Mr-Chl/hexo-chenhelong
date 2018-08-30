@@ -1957,6 +1957,8 @@ ul li {
 }
 .header {
   background: #f5f5f5;
+  position: relative;
+  z-index: 20;
 }
 .header-inner {
   margin-bottom: 80px;

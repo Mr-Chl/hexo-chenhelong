@@ -45,6 +45,8 @@
     width: 100%;
     height: 100px;
     margin: 0;
+    position:relative;
+    z-index:20;
 }
 
 #idhyt-surprise-ball-animation {

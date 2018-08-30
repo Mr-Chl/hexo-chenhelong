@@ -14,7 +14,7 @@ timezone: utc
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://blog.chenhelong.cn
-root: /
+root: C:/Users/user/Desktop/chenhelong.cn文件目录/hexo-chenhelong/public/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
