@@ -52,7 +52,7 @@
 #idhyt-surprise-ball-animation {
     width: 320px;
     position: absolute;
-    top: 50px;
+    top: -200px;
     left: 40%;
     margin:0 auto;
 }
