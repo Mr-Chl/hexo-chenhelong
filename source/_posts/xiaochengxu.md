@@ -1,8 +1,9 @@
 ---
 title: xiaochengxu
 date: 2018-09-06 17:48:34
-tags: - web 
-      - 前端
+tags: 
+     - web 
+     - 前端
 categories:
      - 小程序
 ---

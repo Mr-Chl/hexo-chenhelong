@@ -1,10 +1,11 @@
 ---
 title: newPage
 date: 2018-09-06 18:12:28
-tags: - 新建页面
+tags: 
+    - creatpage
 categories: 
     - hexo
-    - 新建页面
+    - creatpage
 ---
 # 创建文章
    在hexo下创建一个新的文章
@@ -20,5 +21,15 @@ categories:
     ```
 #创建分类页面
     ```
-        hexo new page categories
+    hexo new page categories
+    ```
+
+#打包页面 
+    ```
+       hexo generate
+    ```
+
+#启动本地服务 
+    ```
+        hexo server
     ```
