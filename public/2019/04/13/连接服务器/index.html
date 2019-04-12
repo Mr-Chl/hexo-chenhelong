@@ -29,7 +29,7 @@
 
 
 
-  <meta name="keywords" content="nginx,报错,reload," />
+  <meta name="keywords" content="-gcp -ssh," />
 
 
 
@@ -38,18 +38,18 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="执行nginx -s reload 提示pid 报错提示信息：1nginx: [error] open() “/usr/local/nginx/logs/nginx.pid” failed (2: No such file or directory) 解决方法：执行一下命令就可已启动 不再提示 pid 错误1./nginx -c /usr/local/nginx/conf/nginx.conf">
-<meta name="keywords" content="nginx,报错,reload">
+<meta name="description" content="设置通过root和password使用mac 终端登录Google Cloud Platform 先使用谷歌在浏览器自带ssh 设置密码  切换root用户   1sudo -i  设置root密码   1passwd root    修改vim /etc/ssh/sshd_config  将PermitRootLogin设置为yes   1PermitRootLogin no #改为yes  将">
+<meta name="keywords" content="-gcp -ssh">
 <meta property="og:type" content="article">
-<meta property="og:title" content="nginx 执行 .&#x2F;nginx -s reload 问题">
-<meta property="og:url" content="https://blog.chenhelong.cn/2018/08/11/hello-world/index.html">
+<meta property="og:title" content="设置通过root和password使用mac 终端登录Google Cloud Platform">
+<meta property="og:url" content="https://blog.chenhelong.cn/2019/04/13/连接服务器/index.html">
 <meta property="og:site_name" content="chenhelong blog">
-<meta property="og:description" content="执行nginx -s reload 提示pid 报错提示信息：1nginx: [error] open() “/usr/local/nginx/logs/nginx.pid” failed (2: No such file or directory) 解决方法：执行一下命令就可已启动 不再提示 pid 错误1./nginx -c /usr/local/nginx/conf/nginx.conf">
+<meta property="og:description" content="设置通过root和password使用mac 终端登录Google Cloud Platform 先使用谷歌在浏览器自带ssh 设置密码  切换root用户   1sudo -i  设置root密码   1passwd root    修改vim /etc/ssh/sshd_config  将PermitRootLogin设置为yes   1PermitRootLogin no #改为yes  将">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-30T06:55:12.000Z">
+<meta property="og:updated_time" content="2019-04-12T08:58:38.435Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="nginx 执行 .&#x2F;nginx -s reload 问题">
-<meta name="twitter:description" content="执行nginx -s reload 提示pid 报错提示信息：1nginx: [error] open() “/usr/local/nginx/logs/nginx.pid” failed (2: No such file or directory) 解决方法：执行一下命令就可已启动 不再提示 pid 错误1./nginx -c /usr/local/nginx/conf/nginx.conf">
+<meta name="twitter:title" content="设置通过root和password使用mac 终端登录Google Cloud Platform">
+<meta name="twitter:description" content="设置通过root和password使用mac 终端登录Google Cloud Platform 先使用谷歌在浏览器自带ssh 设置密码  切换root用户   1sudo -i  设置root密码   1passwd root    修改vim /etc/ssh/sshd_config  将PermitRootLogin设置为yes   1PermitRootLogin no #改为yes  将">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -59,7 +59,7 @@
   };
 </script>
 
-  <title> nginx 执行 ./nginx -s reload 问题 | chenhelong blog </title>
+  <title> 设置通过root和password使用mac 终端登录Google Cloud Platform | chenhelong blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -333,7 +333,7 @@
           
           
             
-              nginx 执行 ./nginx -s reload 问题
+              设置通过root和password使用mac 终端登录Google Cloud Platform
             
           
         </h1>
@@ -342,26 +342,11 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2018-08-11T00:48:28+08:00" content="2018-08-10">
-            2018-08-10
+          <time itemprop="dateCreated" datetime="2019-04-13T00:00:07+08:00" content="2019-04-12">
+            2019-04-12
           </time>
         </span>
 
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/nginx/" itemprop="url" rel="index">
-                  <span itemprop="name">nginx</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
         
 
         
@@ -376,8 +361,46 @@
       
 
       
-        <span itemprop="articleBody"><h1 id="执行nginx-s-reload-提示pid-报错"><a href="#执行nginx-s-reload-提示pid-报错" class="headerlink" title="执行nginx -s reload 提示pid 报错"></a>执行nginx -s reload 提示pid 报错</h1><p>提示信息：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx: [error] open() “/usr/local/nginx/logs/nginx.pid” failed (2: No such file or directory)</span><br></pre></td></tr></table></figure></p>
-<h1 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h1><p>执行一下命令就可已启动 不再提示 pid 错误<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./nginx -c /usr/local/nginx/conf/nginx.conf</span><br></pre></td></tr></table></figure></p>
+        <span itemprop="articleBody"><h3 id="设置通过root和password使用mac-终端登录Google-Cloud-Platform"><a href="#设置通过root和password使用mac-终端登录Google-Cloud-Platform" class="headerlink" title="设置通过root和password使用mac 终端登录Google Cloud Platform"></a>设置通过root和password使用mac 终端登录Google Cloud Platform</h3><ul>
+<li><p>先使用谷歌在浏览器自带ssh 设置密码</p>
+<ul>
+<li><p>切换root用户</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo -i</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置root密码</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">passwd root</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>修改<strong>vim /etc/ssh/sshd_config</strong></p>
+<ul>
+<li><p>将PermitRootLogin设置为yes</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PermitRootLogin no #改为yes</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将PasswordAuthentication设置为yes</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PasswordAuthentication no #改为yes</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改完毕保存</p>
+</li>
+</ul>
+</li>
+<li><p>重启服务器</p>
+<ul>
+<li><p>查看sshd 状态</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status sshd.service</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重启sshd 状态</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart sshd.service</span><br><span class="line">or:</span><br><span class="line">reboot</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>重启之后 就可以用账户密码连接gcp了</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh root@x.x.x.x</span><br></pre></td></tr></table></figure>
+<ul>
+<li>输入密码就可以连接了</li>
+</ul>
+</li>
+</ul>
 </span>
       
     </div>
@@ -386,11 +409,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/nginx/" rel="tag">#nginx</a>
-          
-            <a href="/tags/报错/" rel="tag">#报错</a>
-          
-            <a href="/tags/reload/" rel="tag">#reload</a>
+            <a href="/tags/gcp-ssh/" rel="tag">#-gcp -ssh</a>
           
         </div>
       
@@ -399,13 +418,13 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/08/11/fristblog/" rel="prev">nginx 执行 ./nginx -s stop 一系列问题记录一下</a>
+              <a href="/2019/04/13/mysql/" rel="prev">centeros7安装mysql 并设置密码</a>
             
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/11/socend-blog/" rel="next">linux 服务器 centos7 防火墙端口设置</a>
+              <a href="/2019/04/10/php5-6/" rel="next">php5.6</a>
             
           </div>
         </div>
@@ -604,7 +623,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#执行nginx-s-reload-提示pid-报错"><span class="nav-number">1.</span> <span class="nav-text">执行nginx -s reload 提示pid 报错</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解决方法："><span class="nav-number">2.</span> <span class="nav-text">解决方法：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#设置通过root和password使用mac-终端登录Google-Cloud-Platform"><span class="nav-number">1.</span> <span class="nav-text">设置通过root和password使用mac 终端登录Google Cloud Platform</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>

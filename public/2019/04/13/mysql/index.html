@@ -29,7 +29,7 @@
 
 
 
-  <meta name="keywords" content="nginx,报错,reload," />
+  <meta name="keywords" content="center OS7,mysql,set mysql password," />
 
 
 
@@ -38,18 +38,18 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="执行nginx -s reload 提示pid 报错提示信息：1nginx: [error] open() “/usr/local/nginx/logs/nginx.pid” failed (2: No such file or directory) 解决方法：执行一下命令就可已启动 不再提示 pid 错误1./nginx -c /usr/local/nginx/conf/nginx.conf">
-<meta name="keywords" content="nginx,报错,reload">
+<meta name="description" content="centeros7安装mysql 并设置密码 下载 mysql 源文件(如果没有wget 先下载wget yum install wegt)  1wget http://repo.mysql.com/mysql57-community-release-el7-10.noarch.rpm  解析安转软件源  1rpm -Uvh mysql57-community-release-el7-10.noa">
+<meta name="keywords" content="center OS7,mysql,set mysql password">
 <meta property="og:type" content="article">
-<meta property="og:title" content="nginx 执行 .&#x2F;nginx -s reload 问题">
-<meta property="og:url" content="https://blog.chenhelong.cn/2018/08/11/hello-world/index.html">
+<meta property="og:title" content="centeros7安装mysql 并设置密码">
+<meta property="og:url" content="https://blog.chenhelong.cn/2019/04/13/mysql/index.html">
 <meta property="og:site_name" content="chenhelong blog">
-<meta property="og:description" content="执行nginx -s reload 提示pid 报错提示信息：1nginx: [error] open() “/usr/local/nginx/logs/nginx.pid” failed (2: No such file or directory) 解决方法：执行一下命令就可已启动 不再提示 pid 错误1./nginx -c /usr/local/nginx/conf/nginx.conf">
+<meta property="og:description" content="centeros7安装mysql 并设置密码 下载 mysql 源文件(如果没有wget 先下载wget yum install wegt)  1wget http://repo.mysql.com/mysql57-community-release-el7-10.noarch.rpm  解析安转软件源  1rpm -Uvh mysql57-community-release-el7-10.noa">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-30T06:55:12.000Z">
+<meta property="og:updated_time" content="2019-04-12T09:54:53.579Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="nginx 执行 .&#x2F;nginx -s reload 问题">
-<meta name="twitter:description" content="执行nginx -s reload 提示pid 报错提示信息：1nginx: [error] open() “/usr/local/nginx/logs/nginx.pid” failed (2: No such file or directory) 解决方法：执行一下命令就可已启动 不再提示 pid 错误1./nginx -c /usr/local/nginx/conf/nginx.conf">
+<meta name="twitter:title" content="centeros7安装mysql 并设置密码">
+<meta name="twitter:description" content="centeros7安装mysql 并设置密码 下载 mysql 源文件(如果没有wget 先下载wget yum install wegt)  1wget http://repo.mysql.com/mysql57-community-release-el7-10.noarch.rpm  解析安转软件源  1rpm -Uvh mysql57-community-release-el7-10.noa">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -59,7 +59,7 @@
   };
 </script>
 
-  <title> nginx 执行 ./nginx -s reload 问题 | chenhelong blog </title>
+  <title> centeros7安装mysql 并设置密码 | chenhelong blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -333,7 +333,7 @@
           
           
             
-              nginx 执行 ./nginx -s reload 问题
+              centeros7安装mysql 并设置密码
             
           
         </h1>
@@ -342,26 +342,11 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2018-08-11T00:48:28+08:00" content="2018-08-10">
-            2018-08-10
+          <time itemprop="dateCreated" datetime="2019-04-12T16:57:54Z" content="2019-04-12">
+            2019-04-12
           </time>
         </span>
 
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/nginx/" itemprop="url" rel="index">
-                  <span itemprop="name">nginx</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
         
 
         
@@ -376,9 +361,111 @@
       
 
       
-        <span itemprop="articleBody"><h1 id="执行nginx-s-reload-提示pid-报错"><a href="#执行nginx-s-reload-提示pid-报错" class="headerlink" title="执行nginx -s reload 提示pid 报错"></a>执行nginx -s reload 提示pid 报错</h1><p>提示信息：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx: [error] open() “/usr/local/nginx/logs/nginx.pid” failed (2: No such file or directory)</span><br></pre></td></tr></table></figure></p>
-<h1 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h1><p>执行一下命令就可已启动 不再提示 pid 错误<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./nginx -c /usr/local/nginx/conf/nginx.conf</span><br></pre></td></tr></table></figure></p>
-</span>
+        <span itemprop="articleBody"><h3 id="centeros7安装mysql-并设置密码"><a href="#centeros7安装mysql-并设置密码" class="headerlink" title="centeros7安装mysql 并设置密码"></a>centeros7安装mysql 并设置密码</h3><ol>
+<li>下载 mysql 源文件(如果没有wget 先下载wget yum install wegt)</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://repo.mysql.com/mysql57-community-release-el7-10.noarch.rpm</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>解析安转软件源</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -Uvh mysql57-community-release-el7-10.noarch.rpm</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>安装 mysql 服务</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install  -y  mysql-community-server</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>启动/重启/停止 mysql 服务</li>
+</ol>
+<blockquote>
+<p>启动</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service mysqld start</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>重启</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service mysqld restart</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>停止</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service mysqld stop</span><br></pre></td></tr></table></figure>
+<ol start="5">
+<li>查看mysql 启动状态</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service mysqld status</span><br></pre></td></tr></table></figure>
+<h2 id="以上就是安装mysql-部分"><a href="#以上就是安装mysql-部分" class="headerlink" title="以上就是安装mysql 部分"></a>以上就是安装mysql 部分</h2><h3 id="修改mysql密码"><a href="#修改mysql密码" class="headerlink" title="修改mysql密码"></a>修改mysql密码</h3><ol>
+<li>Mysql5.7默认安装之后root是有密码的 先获取默认密码</li>
+</ol>
+<blockquote>
+<p>为了加强安全性，MySQL5.7为root用户随机生成了一个密码，在error log中，关于error log的位置，如果安装的是RPM包，则默认是/var/log/mysqld.log。 只有启动过一次mysql才可以查看临时密码</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep &apos;temporary password&apos; /var/log/mysqld.log</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>以下是默认密码信息</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># grep &apos;temporary password&apos; /var/log/mysqld.log</span><br><span class="line">2019-04-12T08:47:45.738675Z 1 [Note] A temporary password is generated for root@localhost: DjY2j8AWkp:&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>DjY2j8AWkp</strong> 是密码</p>
+</blockquote>
+<ol start="2">
+<li>使用默认密码登录mysql</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -uroot -p</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>登录进去 第一件事 修改密码</li>
+</ol>
+<blockquote>
+<p>密码部分是你的 密码 （不要直接复制进去执行）</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER USER &apos;root&apos;@&apos;localhost&apos; IDENTIFIED BY &apos;密码&apos;;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>不出意外会报错</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ERROR 1819 (HY000): Your password does not satisfy the current policy requirements</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>这个其实与validate_password_policy的值有关，validate_password_policy有以下取值；</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Policy</th>
+<th style="text-align:center">Tests Performed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 or LOW</td>
+<td style="text-align:center">Length</td>
+</tr>
+<tr>
+<td>1 or MEDIUM</td>
+<td style="text-align:center">Length; numeric, lowercase/uppercase, and special characters</td>
+</tr>
+<tr>
+<td>2 or STRONG</td>
+<td style="text-align:center">Length; numeric, lowercase/uppercase, and special charactersdictionary file</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>默认是1，即MEDIUM，所以刚开始设置的密码必须符合长度，且必须含有数字，小写或大写字母，特殊字符。<br>有时候，只是为了自己测试，不想密码设置得那么复杂，譬如说，我只想设置root的密码为123456。<br>必须修改两个全局参数。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set global validate_password_policy=0;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>再修改密码的长度</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set global validate_password_length=1;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>再次执行修改密码就可以了</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER USER &apos;root&apos;@&apos;localhost&apos; IDENTIFIED BY &apos;密码&apos;;</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>授权别的电脑登录 mysql</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GRANT ALL PRIVILEGES ON *.* TO &apos;root&apos;@&apos;%&apos; IDENTIFIED BY &apos;mypassword&apos; WITH GRANT OPTION;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>最后执行 flush privileges; （刷新一下刚才的操作）</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flush privileges;</span><br></pre></td></tr></table></figure></span>
       
     </div>
 
@@ -386,11 +473,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/nginx/" rel="tag">#nginx</a>
+            <a href="/tags/center-OS7/" rel="tag">#center OS7</a>
           
-            <a href="/tags/报错/" rel="tag">#报错</a>
+            <a href="/tags/mysql/" rel="tag">#mysql</a>
           
-            <a href="/tags/reload/" rel="tag">#reload</a>
+            <a href="/tags/set-mysql-password/" rel="tag">#set mysql password</a>
           
         </div>
       
@@ -399,13 +486,11 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/08/11/fristblog/" rel="prev">nginx 执行 ./nginx -s stop 一系列问题记录一下</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/11/socend-blog/" rel="next">linux 服务器 centos7 防火墙端口设置</a>
+              <a href="/2019/04/13/连接服务器/" rel="next">设置通过root和password使用mac 终端登录Google Cloud Platform</a>
             
           </div>
         </div>
@@ -604,7 +689,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#执行nginx-s-reload-提示pid-报错"><span class="nav-number">1.</span> <span class="nav-text">执行nginx -s reload 提示pid 报错</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解决方法："><span class="nav-number">2.</span> <span class="nav-text">解决方法：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#centeros7安装mysql-并设置密码"><span class="nav-number">1.</span> <span class="nav-text">centeros7安装mysql 并设置密码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#以上就是安装mysql-部分"><span class="nav-number"></span> <span class="nav-text">以上就是安装mysql 部分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#修改mysql密码"><span class="nav-number">1.</span> <span class="nav-text">修改mysql密码</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
