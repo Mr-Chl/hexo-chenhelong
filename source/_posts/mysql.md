@@ -111,7 +111,7 @@ set global validate_password_length=1;
 ```
 ALTER USER 'root'@'localhost' IDENTIFIED BY '密码';
 ```
-4. 授权别的电脑登录 mysql
+4. 授权第三方mysql工具登录 mysql
 
 ```
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'mypassword' WITH GRANT OPTION;
