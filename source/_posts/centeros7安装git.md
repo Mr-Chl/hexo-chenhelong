@@ -11,6 +11,8 @@ categories: centeros7
 
 `
   yum install git
+
+ln -s  /usr/bin/git
 `
 #### 安装 nodeJS
 `

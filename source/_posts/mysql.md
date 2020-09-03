@@ -14,6 +14,8 @@ tags:
 
 ```
 wget http://repo.mysql.com/mysql57-community-release-el7-10.noarch.rpm
+下载过 http://repo.mysql.com/mysql57-community-release-el7-10.noarch.rpm  
+直接执行第二步
 ```
 2. 解析安转软件源
 
@@ -98,8 +100,8 @@ ERROR 1819 (HY000): Your password does not satisfy the current policy requiremen
 有时候，只是为了自己测试，不想密码设置得那么复杂，譬如说，我只想设置root的密码为123456。
 必须修改两个全局参数。
 
-```
-set global validate_password_policy=0; 
+``` 
+set global validate_password_policy=0;
 ```
 >再修改密码的长度
 
@@ -114,7 +116,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY '密码';
 4. 授权第三方mysql工具登录 mysql
 
 ```
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'mypassword' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '密码' WITH GRANT OPTION;
 ```
 > 最后执行 flush privileges; （刷新一下刚才的操作）
 
