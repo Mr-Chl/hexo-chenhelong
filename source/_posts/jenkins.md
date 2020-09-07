@@ -64,3 +64,19 @@ rpm -ql jenkins
 
 find / -iname jenkins | xargs -n 1000 rm -rf
 ```
+
+
+### jenkins构建GitHub项目
+
+设置Git
+
+勾选 * Git 选项
+
+
+Repository URL: 填写 GitHub 项目地址 
+ex: (git@github.com:Mr-Chl/node_h5_server.git) https格式链接不支持
+
+credentials ： 设置资格证书，听过 add 添加账号。
+需要生成key 添加到github
+
+Branch Specifier(blank for ‘any’) ： 默认 */master 不用修改。
